@@ -1,0 +1,182 @@
+[
+  {
+    "name":  "FC Barcelona",
+    "img":"https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png",
+    "like": false,
+    "follow": false
+  },
+  {
+    "name": "Manchester United",
+    "img": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/1200px-Manchester_United_FC_crest.svg.png",
+    "like": false,
+    "follow": false
+  },
+  {
+    "name":"Real Madrid" ,
+    "img":"https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/1200px-Real_Madrid_CF.svg.png",
+    "like": false,
+    "follow": false
+  },
+  {
+    "name":"Arsenal FC" ,
+    "img":"https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg",
+    "like": false,
+    "follow": false
+  },
+  {
+    "name":"Bayern Munich" ,
+    "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/FC_Bayern_M%C3%BCnchen_logo_%282017%29.svg/1200px-FC_Bayern_M%C3%BCnchen_logo_%282017%29.svg.png",
+    "like": false,
+    "follow": false
+  },
+  {
+    "name":"AC Milan" ,
+    "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Logo_of_AC_Milan.svg/1200px-Logo_of_AC_Milan.svg.png",
+    "like": false,
+    "follow": false
+  },
+  {
+    "name":"Inter milan" ,
+    "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/FC_Internazionale_Milano_2021.svg/1200px-FC_Internazionale_Milano_2021.svg.png",
+    "like": false,
+    "follow": false
+  },
+  {
+    "name":"Chelsea" ,
+    "img":"https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Chelsea_FC.svg/1200px-Chelsea_FC.svg.png",
+    "like": false,
+    "follow": false
+  },
+  {
+    "name":"Juventus" ,
+    "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Juventus_FC_2017_icon_%28black%29.svg/1200px-Juventus_FC_2017_icon_%28black%29.svg.png",
+    "like": false,
+    "follow": false
+  },
+  {
+    "name":"Atletico Madrid" ,
+    "img":"https://upload.wikimedia.org/wikipedia/en/f/f4/Atletico_Madrid_2017_logo.svg",
+    "like": false,
+    "follow": false
+  },
+  {
+    "name":"Borussia Dortmund" ,
+    "img":"https://upload.wikimedia.org/wikipedia/commons/6/67/Borussia_Dortmund_logo.svg",
+    "like": false,
+    "follow": false
+  },
+  {
+    "name":"Fiorentena FC" ,
+    "img":"https://upload.wikimedia.org/wikipedia/commons/f/f2/2022_ACF_Fiorentina_logo.svg",
+    "like": false,
+    "follow": false
+  },
+  {
+    "name": "Sevilla",
+    "img":"https://upload.wikimedia.org/wikipedia/en/3/3b/Sevilla_FC_logo.svg",
+    "like": false,
+    "follow": false
+  },
+  {
+    "name":"Paris Saint-Germain" ,
+    "img":"https://upload.wikimedia.org/wikipedia/en/a/a7/Paris_Saint-Germain_F.C..svg",
+    "like": false,
+    "follow": false
+  },
+  {
+    "name":"Southampton FC" ,
+    "img":"https://upload.wikimedia.org/wikipedia/en/c/c9/FC_Southampton.svg",
+    "like": false,
+    "follow": false
+  },
+  {
+    "name":"Tottenham" ,
+    "img":"https://upload.wikimedia.org/wikipedia/en/b/b4/Tottenham_Hotspur.svg",
+    "like": false,
+    "follow": false
+  },
+  {
+    "name":"FC Basel" ,
+    "img":"https://upload.wikimedia.org/wikipedia/en/c/c1/FC_Basel_crest.svg",
+    "like": false,
+    "follow": false
+  },
+  {
+    "name":"Manchester City" ,
+    "img":"https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg",
+    "like": false,
+    "follow": false
+  },
+  {
+    "name": "Ajax",
+    "img":"https://upload.wikimedia.org/wikipedia/en/7/79/Ajax_Amsterdam.svg",
+    "like": false,
+    "follow": false
+  },
+  {
+    "name":"Porto" ,
+    "img":"https://upload.wikimedia.org/wikipedia/en/f/f1/FC_Porto.svg",
+    "like": false,
+    "follow": false
+  },
+  {
+    "name":"Liverpool" ,
+    "img":"https://upload.wikimedia.org/wikipedia/en/0/0c/Liverpool_FC.svg",
+    "like": false,
+    "follow": false
+  },
+  {
+    "name":"Valencia" ,
+    "img":"https://upload.wikimedia.org/wikipedia/en/c/ce/Valenciacf.svg",
+    "like": false,
+    "follow": false
+  },
+  {
+    "name":"Villareal",
+    "img":"https://upload.wikimedia.org/wikipedia/en/b/b9/Villarreal_CF_logo-en.svg",
+    "like": false,
+    "follow": false
+  },
+  {
+    "name":"Napoli" ,
+    "img":"https://upload.wikimedia.org/wikipedia/commons/2/2d/SSC_Neapel.svg",
+    "like": false,
+    "follow": false
+  },
+  {
+    "name":"LA Galaxy" ,
+    "img":"https://upload.wikimedia.org/wikipedia/commons/7/70/Los_Angeles_Galaxy_logo.svg",
+    "like": false,
+    "follow": false
+  },
+  {
+    "name":"Benfica",
+    "img":"https://upload.wikimedia.org/wikipedia/en/a/a2/SL_Benfica_logo.svg",
+    "like": false,
+    "follow": false
+  },
+  {
+    "name":"CSKA Moscow" ,
+    "img":"https://upload.wikimedia.org/wikipedia/en/2/26/PFK_CSKA_Logo.svg",
+    "like": false,
+    "follow": false
+  },
+  {
+    "name":"Frankfurt" ,
+    "img":"https://upload.wikimedia.org/wikipedia/commons/0/04/Eintracht_Frankfurt_Logo.svg",
+    "like": false,
+    "follow": false
+  },
+  {
+    "name":"Osasuna",
+    "img":"https://upload.wikimedia.org/wikipedia/en/d/db/Osasuna_logo.svg",
+    "like": false,
+    "follow": false
+  },
+  {
+    "name":"Atletic Bilbao",
+    "img":"https://upload.wikimedia.org/wikipedia/en/9/98/Club_Athletic_Bilbao_logo.svg",
+    "like": false,
+    "follow": false
+  }
+]
