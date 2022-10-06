@@ -116,7 +116,7 @@ h2{
 
 
 .Favourites{
-    position: absolute;
+    position: fixed;
     left: 234px;
     top: 100px;
     width: 300px;
@@ -125,7 +125,7 @@ h2{
     overflow-y: scroll;
 }
 .Follows{
-    position: absolute;
+    position: fixed;
     left: 406px;
     top: 100px;
     width: 300px;
