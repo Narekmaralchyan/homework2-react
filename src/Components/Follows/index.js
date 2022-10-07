@@ -2,7 +2,6 @@ import { useState } from "react"
 
 function Follows (props){
     
-    
     return(
         <div ref={props.followRef} className="Follows followHide  hidden">
             <p className="followHide">Follows</p>

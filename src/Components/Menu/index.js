@@ -5,7 +5,7 @@ function Menu(props){
 
     function handleInput (e){
         setInputValue(e.target.value);
-        props.searchItem(e.target.value)
+        props.searchClubs(e.target.value)
     }
     return (
         <div className="Menu">
