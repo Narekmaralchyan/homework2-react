@@ -1,8 +1,6 @@
 import { useState } from "react"
 
-function Favourites ({favouriteRef , favourites ,likeClub }){
-    console.log(favourites);
-    
+function Favourites ({favouriteRef , favourites ,likeClub }){    
     return(
         <div ref={favouriteRef} className="Favourites favHide hidden ">
             <p className="favHide">Favourite clubs</p>

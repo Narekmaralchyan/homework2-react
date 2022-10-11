@@ -1,4 +1,4 @@
-import { useEffect, useReducer, useRef, useState } from 'react';
+import { useCallback, useEffect, useReducer, useRef, useState } from 'react';
 import './App.css';
 import ClubList from './Components/ClubList';
 import Data from './Components/ClubList/data.json'
@@ -51,52 +51,56 @@ function App() {
   const [state, dispatch] = useReducer(reducer, initialState)
   let followRef = useRef(null)
   let favouriteRef = useRef(null)
-  console.log('state.clubs :>> ', state.clubs);
  
    useEffect(() => {
-     document.addEventListener("click", (e) => {
-       if (e.target.classList.contains("followHide") || e.target == followRef.current) {
-         followRef.current.classList.remove("hidden")
-       }
-       else {
-         followRef.current.classList.add("hidden");
-       }
- 
-       if (e.target.classList.contains("favHide") || e.target == favouriteRef.current) {
-         favouriteRef.current.classList.remove("hidden")
-       }
-       else {
-         favouriteRef.current.classList.add("hidden")
-       }
- 
-     })
+      const listener = (e) => {
+        if (e.target.classList.contains("followHide") || e.target == followRef.current) {
+          followRef.current.classList.remove("hidden")
+        }
+        else {
+          followRef.current.classList.add("hidden");
+        }
+  
+        if (e.target.classList.contains("favHide") || e.target == favouriteRef.current) {
+          favouriteRef.current.classList.remove("hidden")
+        }
+        else {
+          favouriteRef.current.classList.add("hidden")
+        }
+  
+      }
+     document.addEventListener("click", listener)
+
+     return ()=>{
+      document.removeEventListener("click",listener)
+     }
    }, [])
 
-  function likeClub(name){
+  const likeClub = useCallback((name)=>{
     dispatch({
       type:ACTION_TYPES.LIKE_ITEM,
       payload:{
         name:name
       }
     })
-  }
+  },[])
 
-  function followClub(name){
+  const followClub = useCallback((name)=>{
     dispatch({
       type:ACTION_TYPES.FOLLOW_ITEM,
       payload:{
         name:name
       }
     })
-  }
-  function searchClubs(value){
+  },[])
+  const searchClubs = useCallback( (value)=>{
     dispatch({
       type:ACTION_TYPES.SEARCH_LIST,
       payload:{
         searchValue:value
       }
     })
-  }
+  },[])
 
   return (
     <>

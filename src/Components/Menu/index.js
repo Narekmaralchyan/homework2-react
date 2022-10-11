@@ -1,12 +1,13 @@
-import { useState } from "react";
+import { memo, useState } from "react";
 
-function Menu({searchClubs,showFavourites ,showFollows}){
+function Menu({searchClubs}){
     const [inputValue,setInputValue] = useState("")
 
     function handleInput (e){
         setInputValue(e.target.value);
         searchClubs(e.target.value)
     }
+    console.log("rendered menu");
     return (
         <div className="Menu">
             <input  className="search" value={inputValue} onChange={(e)=>handleInput(e)} placeholder="search your club"   />
@@ -16,4 +17,4 @@ function Menu({searchClubs,showFavourites ,showFollows}){
     )
 }
 
-export default Menu;
+export default memo(Menu)

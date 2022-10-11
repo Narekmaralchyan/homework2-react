@@ -1,8 +1,9 @@
+import { memo } from 'react';
 import liked from './icons/liked.png'
 import unLiked from './icons/unLiked.png'
 
 function Club({name,img,like,follow ,likeClub,followClub}){
-    
+        console.log("rendered club");
 
         function likeHandle(){
             likeClub(name)
@@ -24,4 +25,4 @@ function Club({name,img,like,follow ,likeClub,followClub}){
       
 }
 
-export default Club;
+export default memo(Club);
