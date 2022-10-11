@@ -9,7 +9,6 @@ import Follows from './Components/Follows';
 const ACTION_TYPES = {
   LIKE_ITEM: "likeItem",
   FOLLOW_ITEM: "FollowItem",
-  DELETE_ITEM: "DeleteItem",
   SEARCH_LIST: "SearchList"
 }
 
@@ -49,11 +48,10 @@ function reducer(state, action) {
 }
 
 function App() {
-  /*  const [searchValue, setSearchValue] = useState("")
-   const [favourites, setFavourites] = useState([])
-   const [follows, setFollows] = useState([])
-   let followRef = useRef(null)
-   let favouriteRef = useRef(null)
+  const [state, dispatch] = useReducer(reducer, initialState)
+  let followRef = useRef(null)
+  let favouriteRef = useRef(null)
+  console.log('state.clubs :>> ', state.clubs);
  
    useEffect(() => {
      document.addEventListener("click", (e) => {
@@ -73,77 +71,53 @@ function App() {
  
      })
    }, [])
- 
-   function handleFavourites(data) {
-     setFavourites(data)
-   }
- 
-   function unlike(name) {
-     setFavourites(favourites.filter(club => {
-       if (club.name == name) {
-         club.like = false;
-         return false;
-       }
-       else return true;
-     }))
-   }
- 
-   function handleFollows(data) {
-     setFollows(data)
-   }
- 
-   function unfollow(name) {
-     setFollows(follows.filter(club => {
-       if (club.name == name) {
-         club.follow = false;
-         return false;
-       }
-       else return true;
-     }))
-   }
- 
-   function searchItem(value) {
-     setSearchValue(value)
-   }
-   function showFavourites() {
-     favouriteRef.current.classList.toggle("hidden")
-   }
-   function showFollows() {
-     followRef.current.classList.toggle("hidden")
-   } */
 
-  const [state, dispatch] = useReducer(reducer, initialState)
-
-  function searchClubs(clubName){
+  function likeClub(name){
     dispatch({
-      type:ACTION_TYPES.SEARCH_LIST,
+      type:ACTION_TYPES.LIKE_ITEM,
       payload:{
-        searchValue:clubName,
+        name:name
       }
     })
   }
+
+  function followClub(name){
+    dispatch({
+      type:ACTION_TYPES.FOLLOW_ITEM,
+      payload:{
+        name:name
+      }
+    })
+  }
+  function searchClubs(value){
+    dispatch({
+      type:ACTION_TYPES.SEARCH_LIST,
+      payload:{
+        searchValue:value
+      }
+    })
+  }
+
   return (
     <>
       <Menu
-        // showFavourites={showFavourites}
-        // showFollows={showFollows}
-        // searchClubs={searchClubs} 
+        searchClubs={searchClubs} 
         />
       <ClubList
         clubs = {state.clubs}
-        // handleFollows={handleFollows}
-        // handleFavourites={handleFavourites} 
+        likeClub ={likeClub}
+        followClub={followClub}
         />
-       {/* <Favourites
+      <Favourites
         favouriteRef={favouriteRef}
-        showFavourites={showFavourites}
-        unlike={unlike}
-        favourites={favourites} />
+        favourites={state.clubs.filter(club=>club.like)}
+        likeClub = {likeClub}
+         />
       <Follows
         followRef={followRef}
-        showFollows={showFollows}
-        unfollow={unfollow}
-        follows={follows} />  */}
+        follows={state.clubs.filter(club=>club.follow)}
+        followClub= {followClub}
+       /> 
     </>
   );
 }

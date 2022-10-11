@@ -1,16 +1,22 @@
 import liked from './icons/liked.png'
-import unliked from './icons/unliked.png'
+import unLiked from './icons/unLiked.png'
 
-function Club({name,img,like,follow ,likeHandle}){
+function Club({name,img,like,follow ,likeClub,followClub}){
+    
 
-
+        function likeHandle(){
+            likeClub(name)
+        }
+        function handleFollow(){
+            followClub(name)
+        }
         return <div className='club'>
                     <h2>{name}</h2>
                     <img className='logo' src={img}/>
                     <div className="manageButtons">
-                        <img className='LikeIcon'  src={like?liked:unliked} alt="like" />
+                        <img className='LikeIcon' onClick={likeHandle}  src={like?liked:unLiked} alt="like" />
                         <div className='buttons'>
-                            <button  className='followButton'>{follow ?"UNFOLLOW":"FOLLOW"}</button>
+                            <button  className='followButton' onClick={handleFollow}>{follow ?"UNFOLLOW":"FOLLOW"}</button>
                         </div>
                     </div>
         </div>
